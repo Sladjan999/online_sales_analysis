@@ -13,7 +13,6 @@ products = [
 for product in products:
     manager.dodavanje_proizvoda(product)
 
-
 cart = Cart()
 
 cart.dodavanje_proizvoda_u_korpu(manager.products[0])
