@@ -13,3 +13,6 @@ class ProductManager:
 
     def ukupna_vrednost_svih_proizvoda(self):
         return sum(p.price * p.quantity for p in self.products)
+    
+    def uklanjanje_proizvoda_po_imenu(self, name):
+        self.products = [p for p in self.products if p.name != name]
